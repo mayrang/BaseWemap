@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     sourcemap: false,
   },
+  base: "/BaseWemap/",
   resolve: {
     alias: {
       // '@': resolve(__dirname, './src'),
