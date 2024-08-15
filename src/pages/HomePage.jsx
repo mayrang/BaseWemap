@@ -151,14 +151,14 @@ const HomePage = () => {
         const initializeMap = () => {
           const map = new window.wemapgl.WeMap({
             container: mapContainer.current,
-            key: process.env.API_KEY,
+            key: import.meta.env.VITE_API_KEY,
             style: "bright",
             center: currentPosition,
             zoom: 13,
           });
 
           var directions = new window.wemapgl.WeDirections({
-            key: process.env.API_KEY,
+            key: import.meta.env.VITE_API_KEY,
           });
           map.addControl(directions);
 
