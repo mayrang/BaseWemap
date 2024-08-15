@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 const NotFoundPage = () => {
   const navigate = useNavigate();
+  console.log(import.meta.env.VITE_BASE_URL + "/");
+
   return (
     <PlainCenterLayout>
       <div className="text-center text-h1 font-bold">
