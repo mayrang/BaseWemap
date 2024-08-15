@@ -9,9 +9,13 @@ import { ABOUT_PATH, AUTH_PATH } from "utils/constants";
 import "./App.css";
 
 const App = () => {
+  console.log(import.meta.env.VITE_BASE_URL + "/");
   return (
     <Routes>
-      <Route path={import.meta.env.VITE_BASE_URL} element={<HomePage />} />
+      <Route
+        path={import.meta.env.VITE_BASE_URL + "/"}
+        element={<HomePage />}
+      />
       <Route path={ABOUT_PATH} element={<AboutPage />} />
       <Route path={AUTH_PATH} element={<AuthPage />} />
       <Route path="*" element={<NotFoundPage />} />
