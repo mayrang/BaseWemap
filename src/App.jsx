@@ -11,7 +11,7 @@ import "./App.css";
 const App = () => {
   return (
     <Routes>
-      <Route index element={<HomePage />} />
+      <Route path={import.meta.env.VITE_BASE_URL} element={<HomePage />} />
       <Route path={ABOUT_PATH} element={<AboutPage />} />
       <Route path={AUTH_PATH} element={<AuthPage />} />
       <Route path="*" element={<NotFoundPage />} />

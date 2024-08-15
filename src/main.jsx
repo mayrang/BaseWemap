@@ -11,7 +11,7 @@ if (import.meta.env.PROD) console.log = () => null; // Tricky for production (bu
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename={import.meta.env.VITE_BASE_URL}>
+    <BrowserRouter>
       <ConfigProvider
         locale={thTH}
         theme={{
